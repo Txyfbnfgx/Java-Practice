@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .all-button
+      {
+        background-color:gainsboro;
+        border: none;
+        padding: 10px 12px;
+        border-radius: 5px;
+      }
+
+      .is-toggled
+      {
+        background-color: black;
+        color: white;
+        border: none;
+        padding: 10px 12px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <button class="js-gaming-button all-button" onclick=
+    "
+    allButton('gaming');
+    ">
+    Gaming
+    </button>
+
+    <button class="js-music-button all-button" onclick=
+    "
+    allButton('music');
+    
+    ">
+      Music
+    </button>
+
+    <button class="js-tech-button all-button" onclick=
+    "
+    allButton('tech');
+    
+    ">
+      Tech
+    </button>
+
+    <script>
+      function allButton(category)
+      {
+        const button = document.querySelector(`.js-${category}-button`);
+
+        if(!button.classList.contains('is-toggled'))
+        {
+          button.classList.add('is-toggled');
+        }
+        else
+        {
+          button.classList.remove('is-toggled');
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+.all-button
+{
+  background-color:gainsboro;
+  border: none;
+  padding: 10px 12px;
+  border-radius: 5px;
+}
+
+.is-toggled
+{
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 12px;
+  border-radius: 5px;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+
+  <body>
+    <button onclick="playGame('heads')">heads</button>
+    <button onclick="playGame('tails')">tails</button>
+
+    <script>
+      let wins = 0;
+      let losses = 0;
+
+      function playGame(guess) {
+        const randomNumber = Math.random();
+        const result = randomNumber < 0.5 ? 'heads' : 'tails';
+        const outcome = result === guess ? 'You Win' : 'You Lose';
+
+        if (outcome === 'You Win') {
+          wins++;
+        } else {
+          losses++;
+        }
+
+        alert(`${outcome}\nWins: ${wins} Losses: ${losses}`);
+      }
+    </script>
+  </body>
+</html>

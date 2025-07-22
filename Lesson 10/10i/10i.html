@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+  </head>
+
+  <body>
+    <title>
+      Calculator
+    </title>
+
+    <link
+    rel="stylesheet"
+    href="10i.css"
+    >
+    
+    <p>
+
+      <p class="js-output output">
+        
+      </p>
+
+      <button class="calculator-button gray-button" onclick=
+      "
+      //calculation = calculation += '1';
+      updateCalculation('1')
+      //console.log(calculation);
+      ">
+        1
+      </button>
+
+      <button class="calculator-button gray-button" onclick=
+      "
+      //calculation = calculation += '2';
+      updateCalculation('2')
+      //console.log(calculation);
+      ">
+        2
+      </button>
+
+      <button class="calculator-button gray-button" onclick=
+      "
+      //calculation = calculation += '3';
+      updateCalculation('3')
+      //console.log(calculation);
+      ">
+        3
+      </button>
+
+      <button class="calculator-button orange-button" onclick=
+      "
+      //calculation = calculation += ' + ';
+      updateCalculation('+')
+      //console.log(calculation);
+      ">
+        +
+      </button>
+    </p>
+
+    <p>
+      <button class="calculator-button gray-button" onclick=
+      "
+      //calculation = calculation += '4';
+      updateCalculation('4')
+      //console.log(calculation);
+      ">
+        4
+      </button>
+
+      <button class="calculator-button gray-button" onclick=
+      "
+      //calculation = calculation += '5';
+      updateCalculation('5')
+      //console.log(calculation);
+      ">
+        5
+      </button>
+
+      <button class="calculator-button gray-button" onclick=
+      "
+      //calculation = calculation += '6';
+      updateCalculation('6')
+      //console.log(calculation);
+      ">
+        6
+      </button>
+
+      <button class="calculator-button orange-button" onclick=
+      "
+      //calculation = calculation += ' - ';
+      updateCalculation('-')
+      //console.log(calculation);
+      ">
+        -
+      </button>
+    </p>
+
+    <p>
+      <button class="calculator-button gray-button" onclick=
+      "
+      //calculation = calculation += '7';
+      updateCalculation('7')
+      //console.log(calculation);
+      ">
+        7
+      </button>
+
+      <button class="calculator-button gray-button" onclick=
+      "
+      //calculation = calculation += '8';
+      updateCalculation('8')
+      //console.log(calculation);
+      ">
+        8
+      </button>
+
+      <button class="calculator-button gray-button" onclick=
+      "
+      //calculation = calculation += '9';
+      updateCalculation('9')
+      //console.log(calculation);
+      ">
+        9
+      </button>
+
+      <button class="calculator-button orange-button" onclick=
+      "
+      //calculation = calculation += ' * ';
+      updateCalculation('*')
+      //console.log(calculation);
+      ">
+        *
+      </button>
+    </p>
+
+    <p>
+      <button class="calculator-button gray-button" onclick=
+      "
+      //calculation = calculation += '0';
+      updateCalculation('0')
+      //console.log(calculation);
+      ">
+        0
+      </button>
+
+      <button class="calculator-button gray-button" onclick=
+      "
+      //calculation = calculation += '.';
+      updateCalculation('.')
+      //console.log(calculation);
+      ">
+        .
+      </button>
+
+      <button class="calculator-button gray-button" onclick=
+      "
+      calculation = eval(calculation);
+      displayCalculation();
+      localStorage.setItem('calculation', calculation);
+      ">
+      =
+      </button>
+
+      <button class="calculator-button orange-button" onclick=
+      "
+      //calculation = calculation += ' / ';
+      updateCalculation('/')
+      //console.log(calculation);
+      ">
+        /
+      </button>
+    </p>
+
+    <p>
+      <button class="calculator-button gray-button clear-button" onclick=
+      "
+      calculation = '';
+      document.querySelector('.js-output').innerHTML = calculation
+      //console.log('cleared.');
+      localStorage.setItem('calculation', calculation);
+      ">
+        Clear
+      </button>
+    </p>
+
+
+    <script src="10i.js"></script>
+  </body>
+
+</html>
