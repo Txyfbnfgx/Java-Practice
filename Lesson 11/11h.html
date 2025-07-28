@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+  </head>
+  <body>
+    <script>
+
+      const array = [1,2,3];
+      const array2 = [-2,-1,0,99];
+
+      console.log(addOne(array));
+      console.log(addOne(array2));
+
+      function addOne(array)
+      {
+        const newArray = [];
+
+        for(let i = 0; i<array.length; i++)
+        {
+          newArray.push(array[i] + 1);
+        }
+        return newArray;
+      }
+    </script>
+  </body>
+</html>

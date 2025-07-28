@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+  </head>
+  <body>
+    <script>
+      const array = [1,2,3];
+      const array2 = [-2,-1,0,99];
+
+      console.log(addNum(array,2))
+      console.log(addNum(array,3))
+      console.log(addNum(array2,2))
+
+
+      function addNum(array, num)
+      {
+        const newArray = [];
+
+        for(let i = 0; i<array.length; i++)
+        {
+          newArray.push(array[i] + num);
+        }
+
+        return newArray;
+      }
+    </script>
+  </body>
+</html>
